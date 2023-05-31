@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おまえ.dev</title>
+    <style>
+		body {
+			background-color: #ff0000;
+			color: #ffffff;
+			font-size: 12px;
+			animation: blink 1s linear infinite;
+			animation-name: background-blink, text-blink, rotate;
+			animation-duration: 10s, 10s, 10s;
+			animation-timing-function: linear, linear, ease-in-out;
+			animation-delay: 0s, 0s, 1s;
+			animation-iteration-count: infinite, infinite, infinite;
+			animation-direction: alternate, alternate, alternate;
+		}
+
+        h1{
+            position: absolute !important;
+            top:50%;
+            left: 50%;
+            font-size: 500%;
+        }
+		
+		
+		@keyframes blink {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+		
+		@keyframes background-blink {
+			0% {
+				background-color: #ff0000;
+			}
+			33% {
+				background-color: #0000ff;
+			}
+			66% {
+				background-color: #00ff00;
+			}
+			100%{
+				background-color: #ff0000;
+			}
+		}
+	</style>
+</head>
+<body bgcolor="#00ff00">
+	<h1>おまえdev</h1>
+	<script>
+        setInterval(function() {
+				alert("おまえdev");
+			}, 5000);
+    </script>
+</body>
+</html>
